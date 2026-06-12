@@ -1,0 +1,1 @@
+Start-Process cmd -ArgumentList '/k', 'cd /d "C:\Users\haris\Downloads\Enterprice RAG System" && .venv\Scripts\activate && python chat.py'

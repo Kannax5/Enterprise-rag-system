@@ -1,0 +1,26 @@
+# ── Core Framework ────────────────────────────────────────────────────────────
+fastapi>=0.111.0
+uvicorn[standard]>=0.29.0
+pydantic>=2.7.0
+pydantic-settings>=2.2.0
+
+# ── Ingestion ─────────────────────────────────────────────────────────────────
+boto3>=1.34.0
+PyMuPDF>=1.24.0          # fitz — PDF parsing
+pandas>=2.2.0
+openpyxl>=3.1.0          # Excel support via pandas (optional)
+
+# ── Embeddings ────────────────────────────────────────────────────────────────
+sentence-transformers>=3.0.0
+faiss-cpu>=1.8.0          # Use faiss-gpu for GPU support
+
+# ── HTTP Client (LLM) ─────────────────────────────────────────────────────────
+httpx>=0.27.0
+
+# ── Testing ───────────────────────────────────────────────────────────────────
+pytest>=8.2.0
+pytest-asyncio>=0.23.0
+httpx>=0.27.0             # AsyncClient for FastAPI TestClient
+
+# ── Development ───────────────────────────────────────────────────────────────
+python-dotenv>=1.0.0
