@@ -194,4 +194,32 @@ docker run -p 8000:8000 --env-file .env enterprise-rag
 
 ## License
 
-MIT
+Harish KAnna 
+Kanna reference 
+RAG Terminal Comments
+
+CTRL + C        - restart
+
+python -m uvicorn app.main:app --reload       - embedding task
+
+
+.\.venv\Scripts\Activate.ps1     - open in a new terminal
+
+python scripts/chat.py      - bot
+
+
+python scripts/test_query.py --query "What is the annual learning budget?"        - final process
+
+After adding or editing any file, always rebuild the index:
+
+python scripts/build_index.py
+
+Then restart uvicorn:
+
+uvicorn app.main:app --reload
+
+The system will now answer questions from your new policy. Without rebuilding the index, the chat won't know the new content exists.
+
+final start - .\start.ps1
+
+What is the salary range for a Senior Engineer?
